@@ -138,4 +138,12 @@ footer{
     color: var(--background-color);
     text-align: center;
     padding: 10px 0;
-}
+
+    & a {
+        text-decoration: none;
+        color: var(--background-color);
+    }
+    & :hover{
+        color: #0c0c0c;
+    }
+    }
