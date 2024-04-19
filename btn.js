@@ -7,6 +7,6 @@ const unLink = document.createElement("link");
 unLink.rel = "stylesheet";
 unLink.href = "../../btn.css";
 const $head = document.querySelector("head");
-$head.appendChild(unLink);
+$head.prepend(unLink);
 const node = document.querySelector("body");
 node.prepend(unBtn);

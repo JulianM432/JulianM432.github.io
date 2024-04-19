@@ -63,7 +63,7 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     background-color: var(--blue-color);
     height: min-content;
-
+    
     & ul {
         width: 50%;
         display: flex;
@@ -106,4 +106,18 @@ footer {
     text-align: center;
     /* width: 100%; */
     font-weight: bold;
+}
+
+@media screen and (max-width:375px) {
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: min-content;
+        & ul , h1{
+            width: 100%;
+            text-align: center;
+        }
+    }
 }

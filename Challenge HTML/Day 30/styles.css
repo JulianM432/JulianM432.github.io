@@ -44,13 +44,6 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 button {
     background-color: #892ca8;
@@ -65,4 +58,15 @@ button {
         color: #892ca8;
         background-color: #3ff32f;
     }
+}
+.main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    height: 60vh;
 }

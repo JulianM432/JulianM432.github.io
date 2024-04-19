@@ -1,4 +1,5 @@
 #back-btn {
+    z-index: 1;
     display: block;
     position: relative;
     top: 20px;
