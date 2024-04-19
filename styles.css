@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-    --background-color:#6c2234;
-    --text-color:#ffa500 ;
+    --background-color: #6c2234;
+    --text-color: #ffa500;
     /* --white: #e8dfd5;
     --blue: #3b4883;
     --dark-blue: #272d4e;
@@ -66,9 +66,11 @@ header {
         border-bottom: 1px solid;
     }
 }
+
 .page {
     margin: auto;
     max-width: 90vw;
+
     @media (orientation: landscape) {
         max-width: 1200px;
     }
@@ -132,7 +134,8 @@ header {
         font-weight: 500;
     }
 }
-footer{
+
+footer {
     background-color: var(--text-color);
     box-shadow: 0 -8px 10px #0c0c0c;
     color: var(--background-color);
@@ -143,7 +146,28 @@ footer{
         text-decoration: none;
         color: var(--background-color);
     }
-    & :hover{
+
+    &:hover {
         color: #0c0c0c;
     }
+}
+
+#back-btn {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    box-shadow: 1px 1px 10px #000;
+    border: 0;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    &::after {
+        content: "<-"; /* <- */
+        font-weight: bold;
+        /* font-size: 1.5rem; */
     }
+}

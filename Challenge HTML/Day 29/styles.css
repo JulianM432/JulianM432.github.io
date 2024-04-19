@@ -3,13 +3,11 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
-/* :root {
+:root {
     --background-color: #2e2e2e;
     --text-color: #fefefe;
     --blue-color: #2a77f1;
-    --red-color: #4c2248;
-    --yellow-color: #ffa500;
-} */
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -44,4 +42,32 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
     isolation: isolate;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: var(--blue-color);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    padding: 10px;
+}
+
+button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 3px;
+    padding: 6px 0;
+
+    &:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
 }
